@@ -1,7 +1,5 @@
-import { Box, CssBaseline, Container, styled } from '@mui/material';
-import { ReactNode } from 'react';
+import { Box, Container, CssBaseline, styled } from "@mui/material";
 
-// Estilo customizado com styled-components
 const PageWrapper = styled(Box)`
   display: flex;
   flex-direction: column;
@@ -28,7 +26,7 @@ const PageFooter = styled(Box)`
 `;
 
 type PageTemplateProps = {
-    children: React.ReactNode;
+  children: React.ReactNode;
 };
 
 function PageTemplate({ children }: PageTemplateProps) {
@@ -38,14 +36,12 @@ function PageTemplate({ children }: PageTemplateProps) {
       <PageHeader>
         <h1>Cadastro de Pessoas</h1>
       </PageHeader>
-      <PageContent maxWidth="lg">
-        {children}
-      </PageContent>
+      <PageContent maxWidth="lg">{children}</PageContent>
       <PageFooter>
         <p>© 2025 Cadastro de Pessoas. Todos os direitos reservados.</p>
       </PageFooter>
     </PageWrapper>
   );
-};
+}
 
 export default PageTemplate;
