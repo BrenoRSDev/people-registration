@@ -1,4 +1,5 @@
 import { Box, Container, CssBaseline, styled } from "@mui/material";
+import { PageTemplateProps } from "../../../interfaces/PageTemplateProps";
 
 const PageWrapper = styled(Box)`
   display: flex;
@@ -24,10 +25,6 @@ const PageFooter = styled(Box)`
   text-align: center;
   margin-top: auto;
 `;
-
-type PageTemplateProps = {
-  children: React.ReactNode;
-};
 
 function PageTemplate({ children }: PageTemplateProps) {
   return (
