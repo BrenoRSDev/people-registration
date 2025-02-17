@@ -1,0 +1,51 @@
+export const UserListMock = [
+  {
+    id: "45",
+    nome: "João Silva",
+    cpf: "123.456.789-00",
+    email: "joaosilva@email.com",
+    telefone: "(11) 98765-4321",
+  },
+  {
+    id: "123",
+    nome: "Maria Oliveira",
+    cpf: "234.567.890-11",
+    email: "mariaoliveir@email.com",
+    telefone: "(21) 91234-5678",
+  },
+  {
+    id: "52",
+    nome: "Carlos Pereira",
+    cpf: "345.678.901-22",
+    email: "carlospereira@email.com",
+    telefone: "(31) 92345-6789",
+  },
+  {
+    id: "321",
+    nome: "Ana Souza",
+    cpf: "456.789.012-33",
+    email: "anasouza@email.com",
+    telefone: "(41) 93456-7890",
+  },
+  {
+    id: "12",
+    nome: "Pedro Costa",
+    cpf: "567.890.123-44",
+    email: "pedrocosta@email.com",
+    telefone: "(51) 94567-8901",
+  },
+  {
+    id: "33",
+    nome: "Paula Santos",
+    cpf: "678.901.234-55",
+    email: "paulasantos@email.com",
+    telefone: "(61) 95678-9012",
+  },
+  {
+    id: "2",
+    nome: "Felipe Gomes",
+    cpf: "789.012.345-66",
+    email: "felipegomes@email.com",
+    telefone: "(71) 96789-0123",
+  },
+];
