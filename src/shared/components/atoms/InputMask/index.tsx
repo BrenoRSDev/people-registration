@@ -3,8 +3,8 @@ import { Controller, useFormContext } from "react-hook-form";
 import { InputMaskProps } from "../../../interfaces/InputMaskProps";
 import React from "react";
 import { IMaskInput } from "react-imask";
-import { BaseFieldConfig } from "../../../utils/BaseFieldConfig";
-import { ResolveFieldError } from "../../../utils/ResolveFieldError";
+import { BaseFieldConfig } from "../../../utils/baseFieldConfig";
+import { ResolveFieldError } from "../../../utils/resolveFieldError";
 
 interface MaskedInputProps {
   mask: string;

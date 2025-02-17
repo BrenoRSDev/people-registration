@@ -1,6 +1,6 @@
 import { default as ButtonMui } from "@mui/material/Button";
 import { CustomButtonProps } from "../../../interfaces/CustomButtonProps";
-import { BaseButtonConfig } from "../../../utils/BaseButtonConfig";
+import { BaseButtonConfig } from "../../../utils/baseButtonConfig";
 
 function Button(props: CustomButtonProps) {
   return (

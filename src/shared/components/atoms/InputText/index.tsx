@@ -1,8 +1,8 @@
 import { TextField } from "@mui/material";
 import { Controller, useFormContext } from "react-hook-form";
 import { InputTextProps } from "../../../interfaces/InputTextProps";
-import { BaseFieldConfig } from "../../../utils/BaseFieldConfig";
-import { ResolveFieldError } from "../../../utils/ResolveFieldError";
+import { BaseFieldConfig } from "../../../utils/baseFieldConfig";
+import { ResolveFieldError } from "../../../utils/resolveFieldError";
 
 function InputText(props: InputTextProps) {
   const {
