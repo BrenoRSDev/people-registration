@@ -10,7 +10,7 @@ interface Row {
 
 export interface TableCustomProps {
   columns: Column[];
-  rows: Row[];
+  rows: any[];
   rowsPerPageOptions?: number[];
   showEditButton?: boolean;
   showDeleteButton?: boolean;
