@@ -1,10 +1,10 @@
 import { yupResolver } from "@hookform/resolvers/yup";
 import AddIcon from "@mui/icons-material/Add";
 import { Container, styled } from "@mui/material";
-import { FormProvider, SubmitHandler, useForm } from "react-hook-form";
+import { FormProvider, useForm } from "react-hook-form";
 import { NavLink, useNavigate } from "react-router-dom";
 import * as yup from "yup";
-import { UserListMock } from "../../../../assets/mocks/UserListMock";
+import { UserListMock } from "../../../../assets/mocks/userListMock";
 import { Button, InputText } from "../../atoms";
 import { TableCustom } from "../../organisms";
 
@@ -14,7 +14,7 @@ const Header = styled(Container)`
   justify-content: space-between;
   align-items: center;
   gap: 4px;
-  margin-bottom: 12px;
+  margin-bottom: 32px;
 `;
 
 const Body = styled(Container)`
@@ -29,10 +29,10 @@ const schema = yup.object({
 });
 
 const columns = [
-  { field: "nome", label: "Nome" },
+  { field: "name", label: "Nome" },
   { field: "cpf", label: "CPF" },
   { field: "email", label: "E-mail" },
-  { field: "telefone", label: "Telefone" },
+  { field: "telephone", label: "Telefone" },
 ];
 
 function UserListTemplate() {
@@ -40,11 +40,11 @@ function UserListTemplate() {
     resolver: yupResolver(schema),
   });
 
-  const { handleSubmit } = methodsFilterForm;
-  const onSubmit: SubmitHandler<any> = (data) => console.log(data);
+  // const { handleSubmit } = methodsFilterForm;
+  // const onSubmit: SubmitHandler<any> = (data) => console.log(data);
 
   const navigate = useNavigate();
-  
+
   const navigateEdit = (id: string): void => {
     navigate(`/user/edit/${id}`);
   };
@@ -59,9 +59,7 @@ function UserListTemplate() {
             label="Pesquise..."
           />
           <NavLink to="/user/create" end>
-            <Button endIcon={<AddIcon />}>
-              Adicionar
-            </Button>
+            <Button endIcon={<AddIcon />}>Adicionar</Button>
           </NavLink>
         </FormProvider>
       </Header>
