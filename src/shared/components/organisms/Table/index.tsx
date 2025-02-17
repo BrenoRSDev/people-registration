@@ -1,19 +1,19 @@
-import React, { useState } from "react";
+import DeleteIcon from "@mui/icons-material/Delete";
+import EditIcon from "@mui/icons-material/Edit";
 import {
+  IconButton,
+  Paper,
   TableBody,
   TableCell,
   TableContainer,
   TableHead,
   TableRow,
-  Paper,
-  IconButton,
   Tooltip,
 } from "@mui/material";
 import { default as TableMui } from "@mui/material/Table";
-import { TablePaginationCustom } from "../../molecules";
-import EditIcon from "@mui/icons-material/Edit";
-import DeleteIcon from "@mui/icons-material/Delete";
+import React, { useState } from "react";
 import { TableCustomProps } from "../../../interfaces/TableCustomProps";
+import { TablePaginationCustom } from "../../molecules";
 
 function TableCustom({
   columns,
@@ -49,7 +49,7 @@ function TableCustom({
               </TableCell>
             ))}
             {(showEditButton || showDeleteButton) && (
-              <TableCell align="center">Actions</TableCell>
+              <TableCell align="center"></TableCell>
             )}
           </TableRow>
         </TableHead>
